@@ -53,3 +53,9 @@ $("#hour16 .description").val(localStorage.getItem("hour16"));
 $("#hour17 .description").val(localStorage.getItem("hour17"));
 
 setClass();
+
+$("#clearBtn").click(function (event) {
+  event.preventDefault;
+  $("textarea").val("");
+  localStorage.clear();
+});
